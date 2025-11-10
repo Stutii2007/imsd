@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <h1 id="logo">Ramya</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Project Details</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#recommendations">Recommendations</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Icon -->
+  <a href="#top" class="home-icon">🏠</a>
+
+  <!-- About Section -->
+  <section id="about">
+    <img src="https://via.placeholder.com/150" alt="Profile Image" class="profile-pic" />
+    <h2>About Me</h2>
+    <p>
+      Hi! I'm Ramya, a Computer Science student passionate about coding, design, and innovation. I love learning new technologies and building creative web projects.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" alt="HTML5"/><p>HTML5</p></div>
+      <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" alt="CSS3"/><p>CSS3</p></div>
+      <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" alt="JavaScript"/><p>JavaScript</p></div>
+      <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C Programming"/><p>C Language</p></div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Portfolio Website</h3>
+      <p>Created a personal portfolio website using HTML, CSS, and JS showcasing my projects and skills.</p>
+    </div>
+    <div class="project">
+      <h3>To-Do List App</h3>
+      <p>Developed a responsive to-do list app with task tracking and local storage using JavaScript.</p>
+    </div>
+    <div class="project">
+      <h3>Weather Dashboard</h3>
+      <p>Designed an interactive weather dashboard using API integration and modern UI techniques.</p>
+    </div>
+  </section>
+
+  <!-- Recommendations Section -->
+  <section id="recommendations">
+    <h2>Recommendations</h2>
+    <div id="rec-list">
+      <p>“Ramya is a fast learner and very creative in problem-solving.”</p>
+      <p>“Her communication and teamwork make her a great collaborator.”</p>
+      <p>“She shows strong dedication and passion for software development.”</p>
+    </div>
+
+    <h3>Add a New Recommendation:</h3>
+    <textarea id="new-rec" placeholder="Write your recommendation..."></textarea><br>
+    <button id="submit-rec">Submit Recommendation</button>
+  </section>
+</body>
+</html>

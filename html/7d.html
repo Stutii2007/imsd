@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Math Object Properties and Methods</title>
+</head>
+<body>
+<h2>Math Object Example</h2>
+<p id="output"></p>
+<script>
+//Math Object properties
+let piValue=Math.PI;    //value of n
+let eValue=Math.E;      //value of Euler's number
+let sqrt2Value=Math.SQRT2   // square root of 2
+
+//Math object methods
+let sqrtResult = Math.sqrt(16);   //square root
+let powerResult = Math.pow(2,5);   //2^5
+let absResult=Math.abs(-25);   //absolute value
+let roundResult=Math.round(4.7);  // round to nearest integer
+let ceilResult=Math.ceil(4.2);   //round up
+let floorResult=Math.floor(4.6);   //round down
+let randomResult=Math.random();  //random number between 0 and 1
+let maxResult=Math.max(3,9,2,15,7);    // maximum 
+let minResult=Math.min(3,9,2,15,7);    // minimum 
+//display results
+document.getElementById("output").innerHTML=
+  "<b>Properties</b><br>"+
+"PI:"+piValue+"<br>"+
+"E:"+eValue+"<br>"+
+"SQRT2:"+sqrt2Value+"<br><br>"+
+
+"<b>Methods:</b><br>"+
+"Square Root of 16:"+sqrtResult+"<br>"+
+"2^5(Power):"+powerResult+"<br>"+
+"Absolute of -25:"+absResult+"<br>"+
+"Round(4.7):"+roundResult+"<br>"+
+"ceil(4.2):"+ceilResult+"<br>"+
+"floor(4.8):"+floorResult+"<br>"+
+"Random Number(0-1):"+randomResult+"<br>"+
+"Max(3,9,2,15,7):"+maxResult+"<br>"+
+"Min(3,9,2,15,7):"+minResult+"<br>";
+</script>
+</body>
+</html>

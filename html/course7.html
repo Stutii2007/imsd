@@ -1,0 +1,17 @@
+<textarea id="newRec" rows="3" cols="40" placeholder="Write a new recommendation..."></textarea><br>
+<button onclick="addRecommendation()">Submit Recommendation</button>
+
+<script>
+function addRecommendation() {
+  let rec = document.getElementById("newRec").value;
+  if (rec.trim() !== "") {
+    let li = document.createElement("li");
+    li.textContent = '"' + rec + '"';
+    document.getElementById("recList").appendChild(li);
+    document.getElementById("newRec").value = "";
+    alert("Thank you! Your recommendation has been added.");
+  } else {
+    alert("Please enter a recommendation before submitting.");
+  }
+}
+</script>

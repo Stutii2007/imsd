@@ -1,0 +1,8 @@
+<html>
+<head<MOBILE</head>
+<body>
+<img src="C:\Users\smiley\Downloads\georgia-de-lotz-Ebb8fe-NZtM-unsplash.jpg" alt="not visible"
+<img src="C:\Users\smiley\Downloads\shiwa-id-Uae7ouMw91A-unsplash.jpg" alt="not visible"
+<img src="C:\Users\smiley\Downloads\paolo-giubilato-ZwKCWVFdrcs-unsplash.jpg" alt="not visible"
+</body>
+</html>

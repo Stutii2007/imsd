@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thumbnail Image Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .gallery a img {
+      width: 100px;   /* small thumbnail size */
+      height: 100px;  /* small thumbnail size */
+      object-fit: cover;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      transition: transform 0.3s, border-color 0.3s; /* smooth hover */
+    }
+    .gallery a img:hover {
+      transform: scale(1.1);
+      border-color: #666;
+    }
+  </style>
+</head>
+<body>
+  <h1>My Image Gallery</h1>
+  <p>Click on a thumbnail to view the full-sized image</p>
+
+  <div class="gallery">
+    <a href="C:\Users\smiley\OneDrive\Desktop\Screenshot 2025-03-15 161705.png" target="_blank">
+      <img src="C:\Users\smiley\OneDrive\Desktop\Screenshot 2025-03-15 161705.png" alt="Image 1">
+    </a>
+    <a href="C:\Users\smiley\OneDrive\Desktop\Screenshot 2024-10-28 203902.png" target="_blank">
+      <img src="C:\Users\smiley\OneDrive\Desktop\Screenshot 2024-10-28 203902.png" alt="Image 2">
+    </a>
+  </div>
+</body>
+</html>

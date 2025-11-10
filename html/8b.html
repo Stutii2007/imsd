@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Week days with switch case</title>
+<script>
+function showWeekDay(){
+let dayNumber=parseInt(prompt("Enter a number (1-7) d=for the weekday:"));
+let dayName='';
+switch(dayNumber){
+case 1:
+dayName="Sunday";
+break;
+case 2:
+dayName="Monday";
+break;
+case 3:
+dayName="Tuesday";
+break;
+case 4:
+dayName="Wednesday";
+break;
+case 5:
+dayName="Thursday";
+break;
+case 6:
+dayName="Friday";
+break;
+case 7:
+dayName="Saturday";
+break;
+default:
+dayName="Invalid iput! Please enter a number between 1 to 7.";
+}
+//display result in dialog box
+alert(dayName);
+//also display result inside webpage
+document.getElementById("output").innerHTML="<h2>"+dayName+"</h2>";
+}
+</script>
+</head>
+<body onload="showWeekDay()">
+<div id="output" style="text-align:center;margin-top:20px;font-family:times new roman"></div>  
+</body>
+</html>

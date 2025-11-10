@@ -1,0 +1,6 @@
+dbms
+computer networking
+java oops,python,cpp
+dsa
+sql
+apt

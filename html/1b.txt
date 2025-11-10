@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <title>HTML lists example</title>
+</head>
+<body>
+<h1>Demonstration ofHTML Lists</h1> 
+<i-- Ordered List -->
+<h2>1.Ordered list</h2>
+<ol>
+    <li>First item</li>
+    <li>Second item</li>
+    <li>Third item</li>
+</ol>
+</body>
+</html>

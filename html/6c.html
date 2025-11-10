@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="english">
+<head>
+<meta charset="UTF-8">
+<title>JavaScript Input Methods</title>
+<style>	body{
+font-family: Arial, Helvetica, sans-serif;	padding:
+ 
+20px;
+ 
+
+}
+input,button{margin: 10px 0; display: block;}	#output{margin-
+ 
+top:20px; font-weight: bold;}
+</style>
+</head>
+<body>
+<h2>24B11CS302</h2>
+<h1>Ways to take input in JavaScript</h1>
+<!--Text Input Field-->
+<label>Enter your name:</label>
+<input type="text" id="nameInput">
+<button onclick="getInputFromField()">Submit Name</button>
+<!--2.Prompt Box-->
+<button onclick="getInputFromprompt()">Enter age(prompt)</button>
+<!--3.Form Input-->
+<form onsubmit="getInputfromform(event)">
+<label>Enter your email:</label>
+<input type="email" id="emailInput">
+<button type="submit">Submit Email</button>
+</form>
+<!--4.Dropdown Selection-->
+<label>Select your country:</label>
+<select id="countryselect">
+<option value="India">India</option>
+<option value="USA">USA</option>
+<option value="Japan">Japan</option>	</select>
+<button onclick="getInputfromdropdown()">submit country</button>
+<div id="output">Your input will appear here.</div>
+<script>
+//1.Input from text field. function getInputFromField()
+ 
+{
+const name=document.getElementById("nameInput").value;
+document.getElementById("output").innerText="Name: "+ name;
+}
+//2.Input from prompt box function getInputFromprompt()
+{
+const age=prompt("Please enter your age:");
+document.getElementById("output").innerText="Age: " +age;
+}
+//3.Input from form
+function getInputfromform(event)
+{
+event.preventDefault(); //prevent page reload	const email=document.getElementById("emailInput").value;
+document.getElementById("output").innerText="Email: "+ email;
+}
+//4.Input from dropdown	function getInputfromdropdown()
+{
+const country=document.getElementById("countryselect").value; document.getElementById("output").innerText="Country: "+ country;
+}
+</script>
+</body>
+</html>
